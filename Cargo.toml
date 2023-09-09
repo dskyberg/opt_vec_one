@@ -1,7 +1,12 @@
 [package]
 name = "opt_vec_one"
 version = "0.1.0"
+description = "demonstration of a serde problem"
 edition = "2021"
+authors = ["davidskyberg@gmail.com"]
+license = "MIT"
+readme = "README.md"
+keywords = ["serde", "json"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
