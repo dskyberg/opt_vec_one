@@ -33,13 +33,6 @@ pub mod option_vec_or_one {
     use std::fmt;
     use std::marker::PhantomData;
 
-    #[derive(Deserialize, Debug)]
-    #[serde(untagged)] // This is the magic. see https://serde.rs/enum-representations.html
-    pub enum VecOrOne<T> {
-        Vec(Vec<T>),
-        One(T),
-    }
-
     /// Deserialize fails!
     pub fn deserialize<'de, D: de::Deserializer<'de>, T: Deserialize<'de>>(
         deserializer: D,
